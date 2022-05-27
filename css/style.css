@@ -344,7 +344,15 @@ header .head .left button:hover {
 .show_more_second_fr_images,
 .logistic_track,
 .show_more_first_logistic_images,
-.show_more_second_logistic_images
+.show_more_second_logistic_images,
+.hr_images,
+.hr_filter,
+.follow_up_track,
+.training_track,
+.show_more_first_follow_up_images,
+.show_more_second_follow_up_images,
+.show_more_first_training_images,
+.show_more_second_training_images
 {
     display: none;
 }

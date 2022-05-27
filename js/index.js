@@ -62,6 +62,21 @@ $("#logistic_link").click(function(){
   $("#pr_team").hide(1000);
 });
 
+$("#hr_link").click(function(){
+  $("#hr_team").show(1000);
+  $("#hr_track").show(1000);
+  $(".hr_filter").show(1000);
+  $("#follow_up_track").show(1000);
+  
+  $("#logistic_team").hide(1000);
+  $("#logistic_track").hide(1000);
+  $("#fr_team").hide(1000);
+  $("#fr_track").hide(1000);
+  $("#scientific_team").hide(1000);
+  $("#media_team").hide(1000);
+  $("#pr_team").hide(1000);
+});
+
 // ################# filter section #####################
 
 
@@ -259,6 +274,70 @@ $("#show_less_logistic_btn").click(function() {
   $("#show_first_logistic_btn").show();
 });
 // ################## logistic section ########################
+
+
+// ################## HR section ########################
+
+$("#follow_up_link").click(function() {
+  $("#follow_up_link").addClass("active");
+  $("#training_link").removeClass("active");
+  $("#follow_up_track").show(1000);
+  $("#training_track").hide(1000);
+  $("#show_first_follow_up").hide(1000);
+  $("#show_second_follow_up").hide(1000);
+  $("#show_less_follow_up_btn").hide(1000);
+  $("#show_first_follow_up_btn").show();
+});
+$("#show_first_follow_up_btn").click(function() {
+    $("#show_first_follow_up").show(1000);
+    $("#show_first_follow_up_btn").hide();
+    $("#show_second_follow_up_btn").show();
+});
+
+$("#show_second_follow_up_btn").click(function() {
+    $("#show_second_follow_up").show(1000);
+    $("#show_second_follow_up_btn").hide();
+    $("#show_less_follow_up_btn").show();
+});
+
+$("#show_less_follow_up_btn").click(function() {
+  $("#show_first_follow_up").hide(1000);
+    $("#show_second_follow_up").hide(1000);
+    $("#show_less_follow_up_btn").hide(1000);
+    $("#show_first_follow_up_btn").show();
+});
+
+
+$("#training_link").click(function() {
+  $("#training_link").addClass("active");
+  $("#follow_up_link").removeClass("active");
+  $("#training_track").show(1000);
+  $("#follow_up_track").hide(1000);
+  $("#show_first_training").hide(1000);
+  $("#show_second_training").hide(1000);
+  $("#show_less_training_btn").hide(1000);
+  $("#show_first_training_btn").show();
+});
+$("#show_first_training_btn").click(function() {
+  $("#show_first_training").show(1000);
+  $("#show_first_training_btn").hide();
+  $("#show_second_training_btn").show();
+});
+
+$("#show_second_training_btn").click(function() {
+  $("#show_second_training").show(1000);
+  $("#show_second_training_btn").hide();
+  $("#show_less_training_btn").show();
+});
+
+$("#show_less_training_btn").click(function() {
+  $("#show_first_training").hide(1000);
+  $("#show_second_training").hide(1000);
+  $("#show_less_training_btn").hide(1000);
+  $("#show_first_training_btn").show();
+});
+
+// ################## HR section ########################
   
 });
 
