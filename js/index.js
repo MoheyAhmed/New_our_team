@@ -338,6 +338,5 @@ $("#show_less_training_btn").click(function() {
 });
 
 // ################## HR section ########################
-  
 });
 

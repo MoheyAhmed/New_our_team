@@ -240,10 +240,11 @@ header .head .left button:hover {
 }
 
 .our_team .card{
-    height: 350px;
+    height: 370px;
     border-radius: 15px;
     position: relative;
     width: 100%;
+    cursor: pointer;
 }
 
 .our_team .card .top{
@@ -251,19 +252,32 @@ header .head .left button:hover {
     background-color: #0C75C0;
     /* background-color: #3D5A73; */
     border-radius: 15px 15px 0px 0px!important;
+    background-image: url("../images/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
 }
 
 .our_team .card .bottom{
     /* background-color: #383142 !important; */
     background-color: #0a2640 !important;
     border-radius: 0px 0px 15px 15px!important;
-    height: 240px;
+    height: 260px;
+    transition: 1.6s;
+}
+
+.our_team .card .bottom .image_cover{
+    border-radius: 0px 0px 15px 15px!important;
+    width: 100% !important;
+    height: 260px;
+    transition: 1.5s;
 }
 
 .our_team .card .bottom img{
     width: 60% !important;
     border-radius: 15px;
     cursor: pointer;
+    transition: 1.5s;
     /* position: absolute;
     top: 3.5rem;
     left: 3.5rem;
@@ -272,12 +286,13 @@ header .head .left button:hover {
 
 .our_team .card .bottom .info{
     position: absolute;
-    top: 2.5rem;
+    top: 7rem;
     /* left: 20%; */
     text-align: center;
     color: #fff;
     font-size: 18px;
     font-family: 'Comfortaa', Arial !important;
+    display: none;
 }
 
 .our_team .card .bottom .info h5{
@@ -307,17 +322,25 @@ header .head .left button:hover {
    color: #9f69fe !important;
 }
 
+.our_team .card:hover .image_cover{
+    transition: 1.6s;
+    display: none;
+}
+.our_team .card:hover .bottom .info{
+    transition: 1.6s;
+    display: block;
+}
 
 @media(max-width:575px){
     .our_team .card .bottom img{
         width: 35% !important;
     }
-    .our_team .card{
+    /* .our_team .card{
         height: 370px;
     }
     .our_team .card .bottom{
         height: 260px;
-    }
+    } */
 }
 
 @media(max-width:400px){
