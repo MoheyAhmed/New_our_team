@@ -277,7 +277,7 @@ header .head .left button:hover {
 }
 
 .our_team .card .bottom img{
-    width: 70% !important;
+    width: 62% !important;
     border-radius: 15px;
     cursor: pointer;
     transition: 1.5s;
@@ -337,7 +337,7 @@ header .head .left button:hover {
 
 @media(max-width:575px){
     .our_team .card .bottom img{
-        width: 45% !important;
+        width: 42% !important;
     }
     /* .our_team .card{
         height: 370px;
@@ -349,25 +349,14 @@ header .head .left button:hover {
 
 @media(max-width:400px){
     .our_team .card .bottom img{
-        width: 60% !important;
+        width: 55% !important;
     }
     
 }
-
-/* .show_more_first_web_images,
-.show_more_second_web_images,
 .flutter_track,
-.show_more_first_flutter_images,
-.show_more_second_flutter_images,
 .arduino_track,
-.show_more_first_arduino_images,
-.show_more_second_arduino_images,
 .embedded_track,
-.show_more_first_embedded_images,
-.show_more_second_embedded_images,
 .fr_track,
-.show_more_first_fr_images,
-.show_more_second_fr_images,
 .logistic_track,
 .hr_images,
 .follow_up_track,
@@ -379,53 +368,7 @@ header .head .left button:hover {
 .graphic_track,
 .videography_track,
 .photographing_track,
-.social_track{
-    display: none;
-} */
-.show_more_first_web_images,
-.show_more_second_web_images,
-.flutter_track,
-.show_more_first_flutter_images,
-.show_more_second_flutter_images,
-.arduino_track,
-.show_more_first_arduino_images,
-.show_more_second_arduino_images,
-.embedded_track,
-.show_more_first_embedded_images,
-.show_more_second_embedded_images,
-.fr_track,
-.show_more_first_fr_images,
-.show_more_second_fr_images,
-.logistic_track,
-.show_more_first_logistic_images,
-.show_more_second_logistic_images,
-.hr_images,
-.follow_up_track,
-.show_more_first_follow_up_images,
-.show_more_second_follow_up_images,
-.training_track,
-.show_more_first_training_images,
-.show_more_second_training_images,
-.pr_images,
-.presentation_track,
-.show_more_first_presentation_images,
-.show_more_second_presentation_images,
-.data_collecting_track,
-.show_more_first_data_collecting_images,
-.show_more_second_data_collecting_images,
-.media_images,
-.graphic_track,
-.show_more_first_graphic_images,
-.show_more_second_graphic_images,
-.videography_track,
-.show_more_first_videography_images,
-.show_more_second_videography_images,
-.photographing_track,
-.show_more_first_photographing_images,
-.show_more_second_photographing_images,
-.social_track,
-.show_more_first_social_images,
-.show_more_second_social_images
+.social_track
 {
     display: none;
 }
