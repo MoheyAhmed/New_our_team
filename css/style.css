@@ -228,7 +228,7 @@ header .head .left button:hover {
     font-family: 'Comfortaa', Arial !important;
     font-weight: 400;
     text-transform: capitalize;
-    font-size: 17px;
+    font-size: 1rem;
     padding:15px 25px;
     transition: 0.5s;
     cursor: pointer;
@@ -246,18 +246,21 @@ header .head .left button:hover {
     width: 100%;
     cursor: pointer;
 }
+@media(max-width:776px){
+    .our_team .card{
+        width: 85% !important;
+        margin:auto
+    }
+}
 
 .our_team .card .top{
     height: 110px;
-    background-color: #0C75C0;
-    /* background-color: #3D5A73; */
+    background-image: linear-gradient(#5690FF,#1c61e0);
     border-radius: 15px 15px 0px 0px!important;
-    background-image: url("../images/logo.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 .our_team .card .bottom{
     /* background-color: #383142 !important; */
     background-color: #0a2640 !important;
@@ -274,7 +277,7 @@ header .head .left button:hover {
 }
 
 .our_team .card .bottom img{
-    width: 60% !important;
+    width: 70% !important;
     border-radius: 15px;
     cursor: pointer;
     transition: 1.5s;
@@ -319,7 +322,8 @@ header .head .left button:hover {
 
 .our_team .card .bottom .info .icons a:hover{
    /* background-color: rgb(99, 96, 96) !important; */
-   color: #9f69fe !important;
+   color: #0a2640 !important;
+   background-color: #fff;
 }
 
 .our_team .card:hover .image_cover{
@@ -333,7 +337,7 @@ header .head .left button:hover {
 
 @media(max-width:575px){
     .our_team .card .bottom img{
-        width: 35% !important;
+        width: 45% !important;
     }
     /* .our_team .card{
         height: 370px;
@@ -345,7 +349,7 @@ header .head .left button:hover {
 
 @media(max-width:400px){
     .our_team .card .bottom img{
-        width: 45% !important;
+        width: 60% !important;
     }
     
 }
@@ -449,3 +453,29 @@ footer p{
 }
 
 /* *********  End of footer style  ************* */
+
+
+
+
+@keyframes animate{
+    0%{
+        margin-top: -100px;
+    }
+    50%{
+        margin-top: 0;
+    }
+    75%{
+        margin-top: -10px;
+    }
+    100%{
+        margin-top: 0;
+    }
+
+}
+.card{
+    overflow: hidden;
+}
+.card:hover .info{
+    animation-name: animate;
+    animation-duration: 2s;
+}

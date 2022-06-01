@@ -4,7 +4,7 @@ $(document).ready(function(){
     window.scrollTo({ top: 550, behavior: 'smooth'});
   });
 
-  if(pageYOffset <= 665){
+  if(pageYOffset <= 461.25){
     $(".navbar").removeClass("second_navbar");
     $(".navbar").addClass("first_nav");
   }
@@ -16,7 +16,7 @@ $(document).ready(function(){
       
   $(window).on("scroll", function () {
 
-    if(pageYOffset >= 665){
+    if(pageYOffset >= 461.25){
       $(".navbar").addClass("second_navbar");
       $(".navbar").removeClass("first_nav");
     }
@@ -117,6 +117,14 @@ $(document).ready(function(){
 // ################# filter section #####################
 
 // ################## Sientific section ########################
+// $(".card").mouseenter(function () { 
+//   $(".image_cover").slideUp(1000);
+//   $(".info").slideDown(1000);
+// });
+// $(".card").mouseLeave(function () { 
+//   $(".image_cover").slideDown(1000);
+//   $(".info").slideUp(1000);
+// });
 
 $("#scientific_link").click(function(){
   $("#scientific_team").show(1000);
